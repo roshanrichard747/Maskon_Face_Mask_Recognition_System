@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  body{
+    background-color: #181818;
+  }
+  img {
+     
+    width: 67vw;
+     
+     
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   
+  
+  position: absolute;
+  top:10px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px ;
+margin: auto;
+background-color: #212121;
+
+-webkit-box-shadow:0px 0px 137px 44px rgba(0,145,202,0.9);
+-moz-box-shadow: 0px 0px 137px 44px rgba(0,145,202,0.9);
+box-shadow: 0px 0px 137px 44px rgba(0,145,202,0.9);
+}
+div{
+  
+  background-color: #fff;
+  border-radius: 15px ;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+position: absolute;
+margin: auto;
+top: 54%;
+  left: 50%;
+  -webkit-box-shadow:0px 0px 300px 50px rgba(59,128,255,0.54);
+-moz-box-shadow: 0px 0px 300px 50px rgba(59,128,255,0.54);
+box-shadow: 0px 0px 300px 50px rgba(59,128,255,0.54);
+}
+h2{
+  color: #fff;
+  position: absolute;
+margin: auto;
+top: 54%;
+  left: 45%;
+}
+</style>
+  <body>
+    <h2>Please wait...</h2>
+    <div>
+
+        <img src="{{ url_for('video') }}"  />
+    </div>
+            
+    </body>
+
+
+</html>

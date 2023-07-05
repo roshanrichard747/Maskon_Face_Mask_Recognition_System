@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" type= "text/css">
+    <script src="{{url_for('static', filename='header.js')}}"></script>
+    <style>
+        h1{
+            font-size: 40px;
+            text-decoration: underline;
+  
+  text-decoration-color: #0092Ca;
+  margin: 50px;
+        }
+        h3{
+            line-height: 50px;
+            word-spacing: 15px;
+            font-size: 25px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav><span class="name">Maskon</span><span style="float: right; padding-right:15px"><a href="/login">Login</a></span></nav>
+
+   <!-- -->
+        <div class="container">
+
+
+          <input type="radio" id="i1" name="images" checked/>
+          <input type="radio" id="i2" name="images" />
+          <input type="radio" id="i3" name="images" />
+          <input type="radio" id="i4" name="images"  />
+
+          <div class="slide_img" id="one">
+
+              <img src="{{url_for('static', filename='1.jpg')}}">
+
+                <label class="prev" for="i4"><span></span></label>
+                <label class="next" for="i2"><span></span></label>
+
+          </div>
+
+          <div class="slide_img" id="two">
+
+              <img src="{{url_for('static', filename='2.jpeg')}}" >
+
+                <label class="prev" for="i1"><span></span></label>
+                <label class="next" for="i3"><span></span></label>
+
+          </div>
+
+          <div class="slide_img" id="three">
+              <img src="{{url_for('static', filename='3.jpg')}}">
+
+                <label class="prev" for="i2"><span></span></label>
+                <label class="next" for="i4"><span></span></label>
+          </div>
+
+
+          <div class="slide_img" id="four">
+              <img src="{{url_for('static', filename='4.jpg')}}">
+
+                <label class="prev" for="i3"><span></span></label>
+                <label class="next" for="i1"><span></span></label>
+
+          </div>
+
+          <div id="nav_slide">
+           <div id="getstrt"> <a href="/login"><button id="gsrt">GET STARTED</button></a></div>
+
+           <br>
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+            <label for="i3" class="dots" id="dot3"></label>
+            <label for="i4" class="dots" id="dot4"></label>
+          </div>
+
+        </div>
+        <br>
+
+
+        <div id="content">
+          <button class="btn-toggle">Toggle Dark-Mode</button>
+        </div>
+
+        <div class="desc"><h1>About Us</h1><h3>The recent COVID-19 pandemic caught us off-guard, taking several of our close ones. Even though we are barely winning the war against COVID, humanity has to learn from this and prepare itself to face any more future natural enemies. One of the major things which protected us were the face masks.
+           Therefore we have created "MASKON" to monitor the wearing of masks during any future pandemic</h3></div>
+
+
+
+        <script src="drk.js"></script>
+</body>
+</html>

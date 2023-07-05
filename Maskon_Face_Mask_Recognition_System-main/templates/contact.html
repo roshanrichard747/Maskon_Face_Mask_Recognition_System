@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='card.css') }}" type= "text/css">
+</head>
+<body>
+    
+
+<div class="container">
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="{{url_for('static', filename='azure.jpg')}}" alt="Azure" class="card__image" width="103%">
+			<figcaption class="card__caption">
+				<h2 class="card__title">Microsoft Azure</h2>
+				<p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+				<a href="" class="card__button">Read more</a>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="{{url_for('static', filename='flask.jpg')}}" alt="Flask" class="card__image" width="100%">
+			<figcaption class="card__caption">
+				<h2 class="card__title">Python-Flask Framework</h2>
+				<p class="card__snippet">Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
+				<a href="" class="card__button">Read more</a>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="{{url_for('static', filename='fire-base.png')}}" alt="Firebase" class="card__image" width="100%">
+			<figcaption class="card__caption">
+				<h2 class="card__title">Firebase</h2>
+				<p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
+				<a href="" class="card__button">Read more</a>
+			</figcaption>
+		</figure>
+	</div>
+</div>
+
+ 
+</body>
+</html>

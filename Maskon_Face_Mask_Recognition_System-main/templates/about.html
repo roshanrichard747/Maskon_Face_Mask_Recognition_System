@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='card.css') }}" type= "text/css">
+</head>
+<body>
+    
+
+<div class="container">
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="{{url_for('static', filename='azure.jpg')}}" alt="Azure" class="card__image" width="103%">
+			<figcaption class="card__caption">
+				<h2 class="card__title">Microsoft Azure</h2>
+				<p class="card__snippet">The Azure cloud platform is more than 200 products and cloud services designed to help you bring new solutions to life—to solve today’s challenges and create the future. Build, run and manage applications across multiple clouds, on-premises and at the edge, with the tools and frameworks of your choice.</p>
+				<a href="https://azure.microsoft.com/en-in/overview/what-is-azure/" class="card__button">Read more</a>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="{{url_for('static', filename='flask.jpg')}}" alt="Flask" class="card__image" width="100%">
+			<figcaption class="card__caption">
+				<h2 class="card__title">Python-Flask Framework</h2>
+				<p class="card__snippet">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
+				<a href="" class="card__button">Read more</a>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="card">
+		<figure class="card__thumb">
+			<img src="{{url_for('static', filename='fire-base.png')}}" alt="Firebase" class="card__image" width="100%">
+			<figcaption class="card__caption">
+				<h2 class="card__title">Firebase</h2>
+				<p class="card__snippet">Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development</p>
+				<a href="https://firebase.google.com/" class="card__button">Read more</a>
+			</figcaption>
+		</figure>
+	</div>
+</div>
+
+ 
+</body>
+</html>

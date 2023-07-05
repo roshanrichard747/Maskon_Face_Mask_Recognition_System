@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" type= "text/css">
+    <script type="module" src="{{url_for('static', filename='current_user.js')}}"></script>
+    <style>
+        #username{
+            float: right;
+        }
+        nav{
+            background: rgb(24,24,24);
+background: linear-gradient(360deg, rgba(24,24,24,1) 0%, rgba(0,184,255,1) 100%);
+overflow: hidden;
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; 
+
+            
+        }
+    
+        button{
+            float:right;
+            margin-left: 15px;
+            margin-top: 10px;
+            border-radius: 10px 50px ;
+    
+    background-color: #212121;
+    color: white;
+    width: 90px;
+    height: 35px;
+
+        }
+        iframe{
+            border: 0;
+        }
+        body{
+            
+            background: rgb(24,24,24);
+background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(0,184,255,1) 100%);
+        }
+        
+    </style>
+</head>
+<body>
+    <nav><span class="name" style="  font-size: 26px;">Maskon</span><button id="logout" > Logout </button><span id="username"></span> </nav>
+    <iframe src="/user" id="user" name="user" frameBorder="0" style="border: none;" vspace="0" hspace="0"></iframe>
+    <iframe src="/main" id="main" name="main" frameBorder="0" style="border: none;"></iframe>
+
+   <!--<button id="login" style="display: none;">Login</button>
+    <button id="signup" style="display:none">Login</button>--> 
+    
+</body>
+
+</html>

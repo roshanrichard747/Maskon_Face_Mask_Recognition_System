@@ -1,0 +1,42 @@
+ body{
+    font-family: 'Manrope', sans-serif;
+ }
+ p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+ }
+
+.content{
+    width: 70vw;
+height: 50vh;
+border-radius: 15px 60px;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+position: absolute;
+top: 50px;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+
+padding-top: 10px;
+background-color: rgba(255, 255, 255, 0.5);
+color: #fff;
+font-family: 'Inter', sans-serif;
+}
+.card{
+    font-family: 'Inter', sans-serif;
+    width: 70vw;
+height: 50vh;
+border-radius: 15px 50px;
+position: absolute;
+top: 16px;
+bottom: 0;
+left: 8px;
+right: 0;
+margin: auto;
+padding-top: 10px;
+background-color: #212121;
+color: #fff;
+box-shadow: #fff 10px;
+padding-left: 20px;
+}

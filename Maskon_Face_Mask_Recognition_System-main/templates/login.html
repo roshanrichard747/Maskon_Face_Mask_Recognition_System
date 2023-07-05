@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>   
+     
+    <link rel="stylesheet" href="{{ url_for('static',filename='body.css') }}" type= "text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body bgcolor="white">
+   
+     
+        <img src="{{url_for('static', filename='bg.jpg')}}" style="height:100vh; width: 100vw;">
+    
+
+    <div class="login">
+        <a href="/" id="left-arr"><img src="{{url_for('static', filename='l-arr.png')}}" width="12px" style="margin: 3px;"></a>
+        <div class="content">
+        <br><h1>login</h1><br>
+       
+        <h2> Username<input type="email" id="email" placeholder="Email ID"><br></h2>
+        <h2> Password<input type="password" id="Password" placeholder="Password"><br></h2>
+        <h2 style="display: none;"> <label>Name</label><input type="text" id="name" placeholder="Name"><br></h2>
+        <h2 style="display: none;"> <label>Confirm Password</label><input type="password" id="con-Password" placeholder="Password"><br></h2> 
+        <button id="login" style="margin-left: 0px;">Login</button><button id="signup"style="display: none;">Signup</button><button id="logout"style="display: none;"> Logout </button>
+        <h4>new to maskon ? <a href="/register" style="color: lightblue;">click here to register</a></h4>
+    </div>
+    </div>
+    
+</body>
+<script type="module" src="{{url_for('static', filename='auth.js')}}"></script>
+ 
+   
+<script>
+var input = document.getElementById("Password");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("login").click();
+    document.getElementById("login").innerHTML="loading...";
+  }
+});
+ 
+</script>
+</html>

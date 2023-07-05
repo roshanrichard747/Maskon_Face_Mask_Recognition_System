@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}" type= "text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0px" >
+    <style type=text/css>
+        body{
+        background-color: #181818;
+        background-size: 100vw 100vh;
+        
+        }
+        
+        
+        h1{
+            font-size: 40px;
+            text-decoration: underline;
+            word-spacing: 15px;
+  text-decoration-color: #0092Ca;
+        }
+        h3{
+            line-height: 50px;
+            word-spacing: 15px;
+            font-size: 25px;
+        }
+        button{
+            margin: 35px 0px;
+            border-radius: 10px 50px ;
+
+   border: 1px solid white;
+    background-color: #212121;
+    color: white;
+    width: 150px;
+    height: 55px;
+
+        }
+        button:hover{
+            box-shadow: 0 5px 15px #0092Ca;
+        }
+    </style>
+     
+        
+   <div style="margin: 50px; padding-top:30px;position: absolute;
+   top: 50px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   color: white;">
+       <h1>Getting  Started,</h1><br>
+       <h3>The recent COVID-19 pandemic caught us off-guard, taking several of our close ones. Even though we are barely winning the war against COVID, 
+           humanity has to learn from this and prepare itself to face any more future natural enemies. One of the major things which protected us were the face masks. 
+           Therefore we have created "MASKON" to monitor the wearing of masks during any future pandemic</h3><br>
+           <center><img src="{{url_for('static', filename='mask1.jpg')}}" width="45%" style="margin-right: 20px;"><img src="{{url_for('static', filename='mask2.jpg')}}" width="45%"></center>
+       <h3>MASKON uses your live camera footage to detect if the person in footage is wearing a mask.
+            Your Face mask tracker is ready and is just a click away. Click On the button below to start.<br><a href="/mask"><button><p>Click Here</p></button></a></h3>    
+   </div>
+     
+</body>
+</html>
